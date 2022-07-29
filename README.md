@@ -1,4 +1,4 @@
-Some scripts for GNOME Nautilus that simplify working with files.
+### Some scripts for GNOME Nautilus that simplify working with files.
 
 ### Installation
 
