@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+
+import os
+
+all_focused = os.environ.get("NAUTILUS_SCRIPT_SELECTED_FILE_PATHS", "").strip()
+all_focused = all_focused.split('\n')
+
+complete_list = []
+for i, focus in enumerate(all_focused):
+    print(f'folder {i + 1}/{len(all_focused)}:', focus)
+
+    print('Running listdir...')
+    l = os.listdir(focus)
+    print('Converting to absolute paths...')
+    l = [os.path.join(focus, name.strip()) for name in l]
+
+
+    complete_list.extend(l)
+
+all_focused_bns = [os.path.basename(focus) for focus in all_focused]
+out_file_path = os.path.join(os.path.dirname(focus), 
+                             '_'.join(all_focused_bns) + "_file_list.txt")
+print('Writing to the file...')
+with open(out_file_path, 'w') as fout:
+    fout.write('\n'.join(complete_list))
+
+print('Done, see', out_file_path)

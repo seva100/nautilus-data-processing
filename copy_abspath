@@ -1,0 +1,4 @@
+#!/bin/bash
+
+focus=${NAUTILUS_SCRIPT_SELECTED_FILE_PATHS}
+echo $focus | xsel -ab
