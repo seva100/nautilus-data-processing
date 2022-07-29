@@ -23,6 +23,8 @@ for i, focus in enumerate(all_focused):
 
     complete_list.extend(l)
 
+complete_list.sort()
+
 all_focused_bns = [os.path.basename(focus) for focus in all_focused]
 out_file_path = os.path.join(os.path.dirname(focus), 
                              '_'.join(all_focused_bns) + "_file_list.txt")
