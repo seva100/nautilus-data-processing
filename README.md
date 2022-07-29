@@ -1,5 +1,7 @@
 ### Some scripts for GNOME Nautilus that simplify working with files.
 
+![Demonstration of the filelist script](pic/simulation.gif)
+
 ### Installation
 
 Run after cloning the repo:
