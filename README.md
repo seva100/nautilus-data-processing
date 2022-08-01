@@ -11,7 +11,7 @@ bash install.sh
 
 In the end of the installation script execution, it will be suggested to restart nautilus, since the scripts will only apply after that.
 
-If everything is installed correctly, you will have the scripts appearing in `/.local/share/nautilus/scripts/`.
+If everything is installed correctly, you will have the scripts appearing in `~/.local/share/nautilus/scripts/`.
 
 Note that xsel (`sudo apt-get install xsel`) is an additional dependency for the **copy_abspath** script.
 
