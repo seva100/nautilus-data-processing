@@ -20,3 +20,7 @@ Note that xsel (`sudo apt-get install xsel`) is an additional dependency for the
 | **filelist** | Select a folder X and save all list of files in X_filelist.txt. Supports more files in a folder than `ls` and `find` bash commands allow to enlist.| 
 | **filelist_recursive_images** | Select a folder X and save all list of files in X_filelist.txt recursively. Supports more files in a folder than `ls` and `find` bash commands allow to enlist.| 
 | **copy_abspath** | Select a file and its absolute path will be copied to clipboard.| 
+
+### Notes
+
+* In order for the scripts to work over ssh-mounted folder, make sure to mount it **not** via nautilus but via `sshfs` instead. The scripts don't support the nautilius-mounted folders.
